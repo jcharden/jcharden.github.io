@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Section2:Survey · GitBook</title>
+        <title>STRUCTURED NEURAL SUMMARIZATION · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -59,8 +59,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="Slicing_CV.html" />
     
-    <link rel="prev" href="Slicing_APS.html" />
+    
+    <link rel="prev" href="Slicing.html" />
     
 
     </head>
@@ -130,7 +132,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1.1" data-path="Slicing_SNS.html">
+        <li class="chapter active" data-level="1.2.1.1" data-path="Slicing_SNS.html">
             
                 <a href="Slicing_SNS.html">
             
@@ -200,7 +202,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.2" data-path="Survey.html">
+        <li class="chapter " data-level="1.2.2" data-path="Survey.html">
             
                 <a href="Survey.html">
             
@@ -248,7 +250,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Section2:Survey</a>
+        <a href=".." >STRUCTURED NEURAL SUMMARIZATION</a>
     </h1>
 </div>
 
@@ -263,9 +265,17 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="section2survey">Section2:Survey</h1>
+                                <h1 id="structured-neural-summarization"><a href="https://arxiv.org/pdf/1811.01824.pdf" target="_blank">STRUCTURED NEURAL SUMMARIZATION</a></h1>
+<h2 id="1-abstract">1 Abstract</h2>
+<p>&#x89E3;&#x51B3;&#x4E86;&#x5C06;&#x5BCC;&#x542B;&#x5197;&#x4F59;&#x4FE1;&#x606F;&#x7684;&#x957F;&#x6587;&#x672C;&#x8F6C;&#x5316;&#x4E3A;&#x66F4;&#x7CBE;&#x786E;&#x7684;&#x77ED;&#x6587;&#x672C;&#x62BD;&#x8C61;&#xFF0C;&#x8BE5;&#x6587;&#x7AE0;&#x5C06;weakly structured data&#x5373;text&#x8F6C;&#x5316;&#x4E3A;highly structured data&#x5373;graph&#xFF0C;&#x8FD9;&#x91CC;&#x4FDD;&#x7559;&#x4E86;&#x6587;&#x672C;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5173;&#x7CFB;&#x4EE5;&#x53CA;token&#x7684;long-distance&#x5173;&#x7CFB;&#xFF0C;&#x7136;&#x540E;&#x7ED3;&#x5408;&#x56FE;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x8FDB;&#x884C;&#x5B66;&#x4E60;&#x3002;</p>
+<h2 id="2-note">2 Note</h2>
+<p>&#x5173;&#x952E;&#x5728;&#x4E8E;&#x5982;&#x4F55;&#x5C06;text&#x8F6C;&#x6210;graph&#xFF0C;&#x8FD9;&#x91CC;&#x7528;&#x4E00;&#x5F20;&#x56FE;&#x6765;&#x8BF4;&#x660E;&#xFF1A;</p>
+<p><img src="https://i.loli.net/2019/09/25/KAFojNnIVTtCarL.png" alt=""></p>
+<p>&#x6587;&#x7AE0;&#x7528;&#x6765;CoreNLP&#x6765;&#x5F97;&#x5230;entity&#xFF0C;&#x6709;&#x4E09;&#x79CD;&#x8FDE;&#x63A5;&#x5173;&#x7CFB;&#xFF0C;next&#x8868;&#x793A;&#x987A;&#x5E8F;&#x5173;&#x7CFB;&#xFF0C;in&#x8868;&#x793A;&#x4ECE;&#x5C5E;&#x5173;&#x7CFB;&#xFF0C;ref&#x8868;&#x793A;&#x5F15;&#x7528;&#x5173;&#x7CFB;&#x3002;</p>
+<h2 id="3-heuristic">3 Heuristic</h2>
+<p>&#x53EF;&#x4EE5;&#x628A;&#x6BCF;&#x4E00;&#x4E2A;statement&#x518D;&#x7EC6;&#x5206;&#x6210;token&#xFF0C;&#x7136;&#x540E;&#x7528;AST&#x6216;&#x8005;&#x5176;&#x4ED6;&#x65B9;&#x5F0F;&#x7EC4;&#x7EC7;&#x8FD9;&#x4E9B;token&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x6700;&#x5927;&#x7A0B;&#x5EA6;&#x907F;&#x514D;&#x4E22;&#x5931;&#x7531;&#x4E8E;&#x957F;&#x6587;&#x672C;&#x5BFC;&#x81F4;&#x7684;statement&#x4E2D;token&#x4FE1;&#x606F;&#x4E22;&#x5931;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x662F;&#x5F97;&#x5230;&#x7684;&#x56FE;&#x4F1A;&#x66F4;&#x5927;&#xFF0C;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x7528;AST&#x53BB;&#x8868;&#x793A;&#x6BCF;&#x6761;statement&#x662F;&#x4E00;&#x4E2A;&#x5F85;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x3002; </p>
 <footer class="page-footer"><span class="copyright">Copyright all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-09-25 09:54:24
+2019-09-25 11:12:36
 </span></footer>
                                 
                                 </section>
@@ -293,10 +303,14 @@
 
             
                 
-                <a href="Slicing_APS.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Abstract Program Slicing">
+                <a href="Slicing.html" class="navigation navigation-prev " aria-label="Previous page: Section1:Slicing">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="Slicing_CV.html" class="navigation navigation-next " aria-label="Next page: Code Vectors">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -305,7 +319,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Section2:Survey","level":"1.2.2","depth":2,"previous":{"title":"Abstract Program Slicing","level":"1.2.1.5","depth":3,"path":"Chapter1/Slicing_APS.md","ref":"Chapter1/Slicing_APS.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["emphasize","-highlight","tbfed-pagefooter"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"emphasize":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"}},"file":{"path":"Chapter1/Survey.md","mtime":"2019-09-25T01:54:24.616Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-25T03:16:46.075Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"STRUCTURED NEURAL SUMMARIZATION","level":"1.2.1.1","depth":3,"next":{"title":"Code Vectors","level":"1.2.1.2","depth":3,"path":"Chapter1/Slicing_CV.md","ref":"Chapter1/Slicing_CV.md","articles":[]},"previous":{"title":"Section1:Slicing","level":"1.2.1","depth":2,"path":"Chapter1/Slicing.md","ref":"Chapter1/Slicing.md","articles":[{"title":"STRUCTURED NEURAL SUMMARIZATION","level":"1.2.1.1","depth":3,"path":"Chapter1/Slicing_SNS.md","ref":"Chapter1/Slicing_SNS.md","articles":[]},{"title":"Code Vectors","level":"1.2.1.2","depth":3,"path":"Chapter1/Slicing_CV.md","ref":"Chapter1/Slicing_CV.md","articles":[]},{"title":"ORBS","level":"1.2.1.3","depth":3,"path":"Chapter1/Slicing_ORBS.md","ref":"Chapter1/Slicing_ORBS.md","articles":[]},{"title":"MOBS","level":"1.2.1.4","depth":3,"path":"Chapter1/Slicing_MOBS.md","ref":"Chapter1/Slicing_MOBS.md","articles":[]},{"title":"Abstract Program Slicing","level":"1.2.1.5","depth":3,"path":"Chapter1/Slicing_APS.md","ref":"Chapter1/Slicing_APS.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["emphasize","-highlight","tbfed-pagefooter"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"emphasize":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"}},"file":{"path":"Chapter1/Slicing_SNS.md","mtime":"2019-09-25T03:12:36.994Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-25T03:16:46.075Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
