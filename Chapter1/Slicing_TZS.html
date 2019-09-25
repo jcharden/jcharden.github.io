@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Section2:Survey · GitBook</title>
+        <title>TZSlicer · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -70,8 +70,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="Survey.html" />
     
-    <link rel="prev" href="Slicing_TZS.html" />
+    
+    <link rel="prev" href="Slicing_MOBS.html" />
     
 
     <style>
@@ -226,7 +228,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.1.6" data-path="Slicing_TZS.html">
+        <li class="chapter active" data-level="1.2.1.6" data-path="Slicing_TZS.html">
             
                 <a href="Slicing_TZS.html">
             
@@ -244,7 +246,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.2" data-path="Survey.html">
+        <li class="chapter " data-level="1.2.2" data-path="Survey.html">
             
                 <a href="Survey.html">
             
@@ -292,7 +294,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Section2:Survey</a>
+        <a href=".." >TZSlicer</a>
     </h1>
 </div>
 
@@ -307,9 +309,31 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#section2survey"><b>1. </b>Section2:Survey</a></li></ul></div><a href="#section2survey" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="section2survey"><a name="section2survey" class="anchor-navigation-ex-anchor" href="#section2survey"><i class="fa fa-link" aria-hidden="true"></i></a>1. Section2:Survey</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#tzslicer"><b>1. </b>TZSlicer</a></li><ul><li><span class="title-icon "></span><a href="#abstract"><b>1.1. </b>Abstract</a></li><li><span class="title-icon "></span><a href="#note"><b>1.2. </b>Note</a></li><ul><li><span class="title-icon "></span><a href="#&#x6846;&#x67B6;"><b>1.2.1. </b>&#x6846;&#x67B6;</a></li><li><span class="title-icon "></span><a href="#taint-analyzer"><b>1.2.2. </b>Taint analyzer</a></li><li><span class="title-icon "></span><a href="#program-slicer--slice-optimizer"><b>1.2.3. </b>Program Slicer &amp; Slice Optimizer</a></li></ul><li><span class="title-icon "></span><a href="#thought"><b>1.3. </b>Thought</a></li></ul></ul></div><a href="#tzslicer" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="tzslicer"><a name="tzslicer" class="anchor-navigation-ex-anchor" href="#tzslicer"><i class="fa fa-link" aria-hidden="true"></i></a>1. TZSlicer</h1>
+<h2 id="abstract"><a name="abstract" class="anchor-navigation-ex-anchor" href="#abstract"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Abstract</h2>
+<p>&#x9488;&#x5BF9;information leakage&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x63D0;&#x51FA;&#x4E86;&#x4E00;&#x79CD;&#x80FD;&#x81EA;&#x52A8;&#x8BC6;&#x522B;&#x53D1;&#x751F;information leakage&#x7684;&#x4EE3;&#x7801;&#x4F4D;&#x7F6E;&#xFF0C;&#x4ECB;&#x7ECD;&#x4E86;slicing&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<h2 id="note"><a name="note" class="anchor-navigation-ex-anchor" href="#note"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Note</h2>
+<h3 id="&#x6846;&#x67B6;"><a name="&#x6846;&#x67B6;" class="anchor-navigation-ex-anchor" href="#&#x6846;&#x67B6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. &#x6846;&#x67B6;</h3>
+<p><img src="https://i.loli.net/2019/09/25/6EX4aC5GsHflqrO.png" alt=""></p>
+<h3 id="taint-analyzer"><a name="taint-analyzer" class="anchor-navigation-ex-anchor" href="#taint-analyzer"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. Taint analyzer</h3>
+<p>&#x4E09;&#x4E2A;&#x7C92;&#x5EA6;&#x8FDB;&#x884C;taint&#xFF1A;</p>
+<ul>
+<li>Method-level Tainting (TZ-M), which taints the program at the function level and generates security sensitive functions and non-sensitive functions;</li>
+<li>Block-level Tainting (TZ-B), which further taints the internal code blocks (e.g., branches) within the functions and generates security sensitive and non-sensitive blocks; and</li>
+<li>Line-level Tainting (TZ-L), in which each line of the program is labeled as either security sensitive or non-sensitive based on the taint propagation.</li>
+</ul>
+<h3 id="program-slicer--slice-optimizer"><a name="program-slicer--slice-optimizer" class="anchor-navigation-ex-anchor" href="#program-slicer--slice-optimizer"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.3. Program Slicer &amp; Slice Optimizer</h3>
+<p>An important design principle of the Program Slicer is to ensure that the sliced programs are functionally equivalent to the original program.</p>
+<p>Employ dynamic taint analysis that is dependent upon the specific executions of the sliced programs, which has been shown to achieve significantly smaller slices than static slicing.</p>
+<ul>
+<li>TZ-M Slicing</li>
+<li>TZ-B Slicing</li>
+<li>TZ-L Slicing</li>
+</ul>
+<h2 id="thought"><a name="thought" class="anchor-navigation-ex-anchor" href="#thought"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Thought</h2>
+<p>&#x7ED3;&#x5408;&#x52A8;&#x6001;&#x7684;taint analysis&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x66F4;&#x5C0F;&#x800C;&#x7CBE;&#x7684;slice&#x3002; </p>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; <a href="https://jcharden.github.io" target="_blank">&#x7A0B;&#x6F47;</a> 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-09-25 09:54:24
+2019-09-25 15:23:54
 </span></footer>
                                 
                                 </section>
@@ -337,10 +361,14 @@
 
             
                 
-                <a href="Slicing_TZS.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: TZSlicer">
+                <a href="Slicing_MOBS.html" class="navigation navigation-prev " aria-label="Previous page: MOBS">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="Survey.html" class="navigation navigation-next " aria-label="Next page: Section2:Survey">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -349,7 +377,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Section2:Survey","level":"1.2.2","depth":2,"previous":{"title":"TZSlicer","level":"1.2.1.6","depth":3,"path":"Chapter1/Slicing_TZS.md","ref":"Chapter1/Slicing_TZS.md","articles":[]},"dir":"ltr"},"config":{"plugins":["emphasize","-highlight","tbfed-pagefooter","-lunr","-search","search-plus","prism","-sharing","sharing-plus","github","github-buttons","anchor-navigation-ex","sitemap-general"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy <a href='https://jcharden.github.io' target='_blank'>程潇</a> 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"emphasize":{},"github":{"url":"https://github.com/jcharden"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"sitemap-general":{"prefix":"https://jcharden.github.io/"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"github-buttons":{"buttons":[{"user":"jcharden","repo":"jcharden.github.io","type":"star","size":"small","count":true}]},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":true,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/jcharden"}},"gitbook":"*"},"file":{"path":"Chapter1/Survey.md","mtime":"2019-09-25T01:54:24.616Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-25T07:27:03.759Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"TZSlicer","level":"1.2.1.6","depth":3,"next":{"title":"Section2:Survey","level":"1.2.2","depth":2,"path":"Chapter1/Survey.md","ref":"Chapter1/Survey.md","articles":[]},"previous":{"title":"MOBS","level":"1.2.1.5","depth":3,"path":"Chapter1/Slicing_MOBS.md","ref":"Chapter1/Slicing_MOBS.md","articles":[]},"dir":"ltr"},"config":{"plugins":["emphasize","-highlight","tbfed-pagefooter","-lunr","-search","search-plus","prism","-sharing","sharing-plus","github","github-buttons","anchor-navigation-ex","sitemap-general"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy <a href='https://jcharden.github.io' target='_blank'>程潇</a> 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"emphasize":{},"github":{"url":"https://github.com/jcharden"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"sitemap-general":{"prefix":"https://jcharden.github.io/"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"github-buttons":{"buttons":[{"user":"jcharden","repo":"jcharden.github.io","type":"star","size":"small","count":true}]},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":true,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/jcharden"}},"gitbook":"*"},"file":{"path":"Chapter1/Slicing_TZS.md","mtime":"2019-09-25T07:23:54.157Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-25T07:27:03.759Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
