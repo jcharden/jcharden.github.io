@@ -1,5 +1,7 @@
 # [TZSlicer](https://ieeexplore.ieee.org/document/8383886)
 
+[pdf](https://ieeexplore.ieee.org/document/8383886)
+
 ## Abstract
 
 针对information leakage的问题，提出了一种能自动识别发生information leakage的代码位置，介绍了slicing的方法。

@@ -2,6 +2,8 @@
 
 ## [Automatically Learning Semantic Features for Defect Prediction](https://ece.uwaterloo.ca/~lintan/publications/deeplearn-icse16.pdf)
 
+[pdf](https://ece.uwaterloo.ca/~lintan/publications/deeplearn-icse16.pdf)
+
 Leverage Deep Belief Network (**DBN**) to automatically learn semantic features from token vectors extracted from programs’ Abstract Syntax Trees (**ASTs**).
 
 ### Motivating example
@@ -19,6 +21,8 @@ Leverage Deep Belief Network (**DBN**) to automatically learn semantic features 
 ![](https://i.loli.net/2019/09/25/Odjflb4Su965QCn.png)
 
 ## [DeepFL: Integrating Multiple Fault Diagnosis Dimensions for Deep Fault Localization](https://dl.acm.org/citation.cfm?id=3330574)
+
+[pdf](https://dl.acm.org/citation.cfm?id=3330574)
 
 Collect various suspiciousness-value-based, fault-proneness-based and
 textual-similarity-based features from the fault localization, defect

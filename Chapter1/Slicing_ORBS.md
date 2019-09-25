@@ -1,4 +1,6 @@
-# [ORBS:Language-Independent Program Slicing]([./pdf/ORBS.pdf](http://www0.cs.ucl.ac.uk/staff/j.krinke/publications/fse14.pdf))
+# [ORBS:Language-Independent Program Slicing](http://www0.cs.ucl.ac.uk/staff/j.krinke/publications/fse14.pdf)
+
+[pdf](http://www0.cs.ucl.ac.uk/staff/j.krinke/publications/fse14.pdf)
 
 ## Abstract
 

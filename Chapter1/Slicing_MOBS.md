@@ -1,5 +1,7 @@
 # [MOBS: Multi-Operator Observation-Based Slicing using Lexical Approximation of Program Dependence](http://www0.cs.ucl.ac.uk/staff/j.krinke/publications/icse18.pdf)
 
+[pdf](http://www0.cs.ucl.ac.uk/staff/j.krinke/publications/icse18.pdf)
+
 ## Abstract
 
 改进了ORBS，通过文本相似度

@@ -1,5 +1,7 @@
 # [STRUCTURED NEURAL SUMMARIZATION](https://arxiv.org/pdf/1811.01824.pdf)
 
+[pdf](http://www0.cs.ucl.ac.uk/staff/j.krinke/publications/fse14.pdf)
+
 ## Abstract
 
 解决了将富含冗余信息的长文本转化为更精确的短文本抽象，该文章将weakly structured data即text转化为highly structured data即graph，这里保留了文本的上下文关系以及token的long-distance关系，然后结合图神经网络进行学习。
