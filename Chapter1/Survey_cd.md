@@ -4,3 +4,13 @@
 
 Propose a novel AST-based Neural Network (ASTNN) for source code
 representation.
+
+- An example of AST Statement nodes (marked in red)
+
+![](https://i.loli.net/2019/09/25/mKRJpCDcZu7bG14.png)
+
+- Overview
+
+![](https://i.loli.net/2019/09/25/PFWhzAdqYB9Tbcw.png)
+
+First, we parse a source code fragment into an AST, and design a preorder traversal algorithm to split each AST to a sequence of statement trees (ST-trees, which are trees consisting of statement nodes as roots and corresponding AST nodes of the statements), as illustrated in Figure 1. All ST-trees are encoded by the Statement Encoder to vectors, denoted as e1, · · · , et. We then use Bidirectional Gated Recurrent Unit [35] (Bi-GRU), to model the naturalness of the statements. The hidden states of Bi-GRU are sampled into a single vector by pooling, which is the representation of the code fragment.
