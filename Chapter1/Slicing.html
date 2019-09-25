@@ -1,0 +1,326 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Section1:Slicing · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Survey.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Chapter1:VulDetection
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="Slicing.html">
+            
+                <a href="Slicing.html">
+            
+                    
+                    Section1:Slicing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="Survey.html">
+            
+                <a href="Survey.html">
+            
+                    
+                    Section2:Survey
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Section1:Slicing</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="section1slicing">Section1:Slicing</h1>
+<h2 id="structured-neural-summarization"><a href="https://arxiv.org/pdf/1811.01824.pdf" target="_blank">STRUCTURED NEURAL SUMMARIZATION</a></h2>
+<h3 id="abstract">Abstract</h3>
+<p>&#x89E3;&#x51B3;&#x4E86;&#x5C06;&#x5BCC;&#x542B;&#x5197;&#x4F59;&#x4FE1;&#x606F;&#x7684;&#x957F;&#x6587;&#x672C;&#x8F6C;&#x5316;&#x4E3A;&#x66F4;&#x7CBE;&#x786E;&#x7684;&#x77ED;&#x6587;&#x672C;&#x62BD;&#x8C61;&#xFF0C;&#x8BE5;&#x6587;&#x7AE0;&#x5C06;weakly structured data&#x5373;text&#x8F6C;&#x5316;&#x4E3A;highly structured data&#x5373;graph&#xFF0C;&#x8FD9;&#x91CC;&#x4FDD;&#x7559;&#x4E86;&#x6587;&#x672C;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5173;&#x7CFB;&#x4EE5;&#x53CA;token&#x7684;long-distance&#x5173;&#x7CFB;&#xFF0C;&#x7136;&#x540E;&#x7ED3;&#x5408;&#x56FE;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#x8FDB;&#x884C;&#x5B66;&#x4E60;&#x3002;</p>
+<h3 id="note">Note</h3>
+<p>&#x5173;&#x952E;&#x5728;&#x4E8E;&#x5982;&#x4F55;&#x5C06;text&#x8F6C;&#x6210;graph&#xFF0C;&#x8FD9;&#x91CC;&#x7528;&#x4E00;&#x5F20;&#x56FE;&#x6765;&#x8BF4;&#x660E;&#xFF1A;</p>
+<p><img src="https://i.loli.net/2019/09/25/KAFojNnIVTtCarL.png" alt=""></p>
+<p>&#x6587;&#x7AE0;&#x7528;&#x6765;CoreNLP&#x6765;&#x5F97;&#x5230;entity&#xFF0C;&#x6709;&#x4E09;&#x79CD;&#x8FDE;&#x63A5;&#x5173;&#x7CFB;&#xFF0C;next&#x8868;&#x793A;&#x987A;&#x5E8F;&#x5173;&#x7CFB;&#xFF0C;in&#x8868;&#x793A;&#x4ECE;&#x5C5E;&#x5173;&#x7CFB;&#xFF0C;ref&#x8868;&#x793A;&#x5F15;&#x7528;&#x5173;&#x7CFB;&#x3002;</p>
+<h3 id="heuristic">Heuristic</h3>
+<p>&#x53EF;&#x4EE5;&#x628A;&#x6BCF;&#x4E00;&#x4E2A;statement&#x518D;&#x7EC6;&#x5206;&#x6210;token&#xFF0C;&#x7136;&#x540E;&#x7528;AST&#x6216;&#x8005;&#x5176;&#x4ED6;&#x65B9;&#x5F0F;&#x7EC4;&#x7EC7;&#x8FD9;&#x4E9B;token&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x6700;&#x5927;&#x7A0B;&#x5EA6;&#x907F;&#x514D;&#x4E22;&#x5931;&#x7531;&#x4E8E;&#x957F;&#x6587;&#x672C;&#x5BFC;&#x81F4;&#x7684;statement&#x4E2D;token&#x4FE1;&#x606F;&#x4E22;&#x5931;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x662F;&#x5F97;&#x5230;&#x7684;&#x56FE;&#x4F1A;&#x66F4;&#x5927;&#xFF0C;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x7528;AST&#x53BB;&#x8868;&#x793A;&#x6BCF;&#x6761;statement&#x662F;&#x4E00;&#x4E2A;&#x5F85;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x3002;</p>
+<h2 id="code-vectors-understanding-programs-through-embedded-abstracted-symbolic-traces"><a href="https://arxiv.org/pdf/1803.06686.pdf" target="_blank">Code Vectors: Understanding Programs Through Embedded Abstracted Symbolic Traces</a></h2>
+<h3 id="abstract">Abstract</h3>
+<p>&#x91C7;&#x7528;abstractions of traces obtained from symbolic execution of a program&#x6765;&#x8868;&#x793A;&#x7A0B;&#x5E8F;&#xFF0C;&#x5C06;&#x8FD9;&#x4E9B;traces&#x8F6C;&#x5316;&#x4E3A;&#x5411;&#x91CF;&#xFF0C;&#x8FD9;&#x4E9B;&#x5411;&#x91CF;&#x5373;&#x4EE3;&#x7801;&#x7684;&#x7279;&#x5F81;&#x8868;&#x793A;&#x3002;</p>
+<h3 id="note">Note</h3>
+<p>&#x5173;&#x952E;&#x5728;&#x4E8E;&#x5982;&#x4F55;&#x62BD;&#x8C61;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x505A;word embedding</p>
+<ul>
+<li>&#x5173;&#x4E8E;&#x5982;&#x4F55;&#x505A;&#x62BD;&#x8C61;&#xFF1A;
+<img src="https://i.loli.net/2019/09/25/JafQ68xZEvOIjUR.png" alt="">
+<img src="https://i.loli.net/2019/09/25/264JMpCwEgOFVhq.png" alt="">
+<img src="https://i.loli.net/2019/09/25/D3fBOnV92WhAQS4.png" alt=""></li>
+</ul>
+<ul>
+<li>&#x5173;&#x4E8E;&#x5982;&#x4F55;&#x505A;word embedding
+<img src="https://i.loli.net/2019/09/25/kyGD2X45m7TpofO.png" alt=""></li>
+</ul>
+<h3 id="heuristic">Heuristic</h3>
+<p>&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x505A;slice&#x4EE5;&#x53CA;word,statement embedding&#x7684;&#x601D;&#x8DEF;
+&#x505A;slice&#x53EF;&#x4EE5;&#x7ED3;&#x5408;&#x7B26;&#x53F7;&#x6267;&#x884C;&#xFF0C;embedding&#x53EF;&#x4EE5;&#x7528;&#x62BD;&#x8C61;&#x8868;&#x793A;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x51CF;&#x5C11;token&#x7684;&#x6570;&#x91CF;&#xFF0C;&#x4EE5;&#x53CA;&#x5220;&#x9664;&#x5197;&#x4F59;&#x4FE1;&#x606F;&#x3002;</p>
+<h2 id="orbslanguage-independent-program-slicing"><a href="[./pdf/ORBS.pdf](http:/www0.cs.ucl.ac.uk/staff/j.krinke/publications/fse14.pdf">ORBS:Language-Independent Program Slicing</a>)</h2>
+<h3 id="abstract">Abstract</h3>
+<p>&#x901A;&#x8FC7;&#x5220;&#x9664;&#x7279;&#x5B9A;&#x8BED;&#x53E5;&#xFF0C;&#x4E14;&#x5220;&#x9664;&#x540E;&#x5BF9;&#x4E8E;&#x7279;&#x5B9A;&#x8F93;&#x5165;&#xFF0C;&#x4F9D;&#x7136;&#x80FD;&#x5F97;&#x5230;&#x539F;&#x6765;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x4E0D;&#x65AD;&#x5220;&#x9664;&#x3002;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x52A8;&#x6001;&#x7684;slicing&#xFF0C;&#x9700;&#x8981;testcase&#x8F93;&#x5165;&#x3002;</p>
+<h3 id="approach">Approach</h3>
+<p>&#x7ED9;&#x4E86;&#x4E00;&#x4E2A;slice&#x7684;&#x5B9A;&#x4E49;
+<img src="https://i.loli.net/2019/09/25/P4LxGo2lAp75TE3.png" alt=""></p>
+<h3 id="heuristic">Heuristic</h3>
+<p>&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;slice&#x7684;&#x601D;&#x8DEF;&#xFF0C;&#x901A;&#x8FC7;&#x5220;&#x9664;&#x4E4B;&#x540E;&#x800C;&#x4E0D;&#x6539;&#x53D8;&#x8BED;&#x4E49;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<h2 id="mobs-multi-operator-observation-based-slicing-using-lexical-approximation-of-program-dependence"><a href="http://www0.cs.ucl.ac.uk/staff/j.krinke/publications/icse18.pdf" target="_blank">MOBS: Multi-Operator Observation-Based Slicing using Lexical Approximation of Program Dependence</a></h2>
+<h3 id="abstract">Abstract</h3>
+<p>&#x6539;&#x8FDB;&#x4E86;ORBS&#xFF0C;&#x901A;&#x8FC7;&#x6587;&#x672C;&#x76F8;&#x4F3C;&#x5EA6;</p>
+<h3 id="note">Note</h3>
+<p>&#x901A;&#x8FC7;vsm&#x548C;lda&#x7B97;&#x6CD5;&#x8BA1;&#x7B97;&#x548C;&#x5F85;&#x5220;&#x9664;&#x7684;lines&#x548C;&#x5DF2;&#x7ECF;&#x53EF;&#x4EE5;&#x786E;&#x5B9A;&#x5220;&#x9664;&#x7684;lines&#x7684;&#x76F8;&#x4F3C;&#x5EA6;&#xFF0C;&#x5982;&#x679C;&#x5F88;&#x76F8;&#x4F3C;&#x5219;&#x5220;&#x6389;&#x3002;</p>
+<h3 id="heuristic">Heuristic</h3>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BA1;&#x7B97;&#x76F8;&#x4F3C;&#x5EA6;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x5BF9;slice&#x8FDB;&#x884C;&#x4E00;&#x4E9B;&#x9884;&#x5904;&#x7406;</p>
+<h2 id="abstract-program-slicing-an-abstract-interpretation-based-approach-to-program-slicing"><a href="https://arxiv.org/pdf/1605.05104.pdf" target="_blank">Abstract Program Slicing: an Abstract Interpretation-based approach to Program Slicing</a></h2>
+<h3 id="abstract">Abstract</h3>
+<h3 id="note">Note</h3>
+<p><img src="https://i.loli.net/2019/09/25/3MmwcfkxKHuPYQB.png" alt=""></p>
+<h3 id="heuristic">Heuristic</h3>
+<footer class="page-footer"><span class="copyright">Copyright all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-09-25 10:05:41
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Chapter1:VulDetection">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Survey.html" class="navigation navigation-next " aria-label="Next page: Section2:Survey">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Section1:Slicing","level":"1.2.1","depth":2,"next":{"title":"Section2:Survey","level":"1.2.2","depth":2,"path":"Chapter1/Survey.md","ref":"Chapter1/Survey.md","articles":[]},"previous":{"title":"Chapter1:VulDetection","level":"1.2","depth":1,"path":"Chapter1/README.md","ref":"Chapter1/README.md","articles":[{"title":"Section1:Slicing","level":"1.2.1","depth":2,"path":"Chapter1/Slicing.md","ref":"Chapter1/Slicing.md","articles":[]},{"title":"Section2:Survey","level":"1.2.2","depth":2,"path":"Chapter1/Survey.md","ref":"Chapter1/Survey.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["emphasize","-highlight","tbfed-pagefooter"],"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"emphasize":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"}},"file":{"path":"Chapter1/Slicing.md","mtime":"2019-09-25T02:05:41.921Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-25T02:38:05.160Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
