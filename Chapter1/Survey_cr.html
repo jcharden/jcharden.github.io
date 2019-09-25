@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Chapter1:VulDetection · GitBook</title>
+        <title>Code representation · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -70,10 +70,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Slicing.html" />
     
-    
-    <link rel="prev" href="../" />
+    <link rel="prev" href="Survey_cd.html" />
     
 
     <style>
@@ -135,7 +133,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="./">
+        <li class="chapter " data-level="1.2" data-path="./">
             
                 <a href="./">
             
@@ -299,7 +297,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2.4" data-path="Survey_cr.html">
+        <li class="chapter active" data-level="1.2.2.4" data-path="Survey_cr.html">
             
                 <a href="Survey_cr.html">
             
@@ -352,7 +350,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Chapter1:VulDetection</a>
+        <a href=".." >Code representation</a>
     </h1>
 </div>
 
@@ -367,16 +365,34 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#chapter1vuldetection"><b>1. </b>Chapter1:VulDetection</a></li></ul></div><a href="#chapter1vuldetection" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="chapter1vuldetection"><a name="chapter1vuldetection" class="anchor-navigation-ex-anchor" href="#chapter1vuldetection"><i class="fa fa-link" aria-hidden="true"></i></a>1. Chapter1:VulDetection</h1>
-<blockquote>
-<p>Vulnerability Detection paper summary</p>
-</blockquote>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#code-representation"><b>1. </b>Code representation</a></li><ul><li><span class="title-icon "></span><a href="#a-novel-neural-source-code-representation-based-on-abstract-syntax-tree"><b>1.1. </b>A Novel Neural Source Code Representation based on Abstract Syntax Tree</a></li></ul><li><span class="title-icon "></span><a href="#code-vectors-understanding-programs-through-embedded-abstracted-symbolic-traces"><b>2. </b>Code Vectors: Understanding Programs Through Embedded Abstracted Symbolic Traces</a></li></ul></div><a href="#code-representation" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="code-representation"><a name="code-representation" class="anchor-navigation-ex-anchor" href="#code-representation"><i class="fa fa-link" aria-hidden="true"></i></a>1. Code representation</h1>
+<h2 id="a-novel-neural-source-code-representation-based-on-abstract-syntax-tree"><a name="a-novel-neural-source-code-representation-based-on-abstract-syntax-tree" class="anchor-navigation-ex-anchor" href="#a-novel-neural-source-code-representation-based-on-abstract-syntax-tree"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. A Novel Neural Source Code Representation based on Abstract Syntax Tree</h2>
+<p>Propose a novel AST-based Neural Network (ASTNN) for source code
+representation.</p>
 <ul>
-<li>slicing tech</li>
-<li>survey of program analysis with dl/ml </li>
+<li>An example of AST Statement nodes (marked in red)</li>
+</ul>
+<p><img src="https://i.loli.net/2019/09/25/mKRJpCDcZu7bG14.png" alt=""></p>
+<ul>
+<li>Overview</li>
+</ul>
+<p><img src="https://i.loli.net/2019/09/25/PFWhzAdqYB9Tbcw.png" alt=""></p>
+<p>First, we parse a source code fragment into an AST, and design a preorder traversal algorithm to split each AST to a sequence of statement trees (ST-trees, which are trees consisting of statement nodes as roots and corresponding AST nodes of the statements), as illustrated in Figure 1. All ST-trees are encoded by the Statement Encoder to vectors, denoted as e1, &#xB7; &#xB7; &#xB7; , et. We then use Bidirectional Gated Recurrent Unit [35] (Bi-GRU), to model the naturalness of the statements. The hidden states of Bi-GRU are sampled into a single vector by pooling, which is the representation of the code fragment.</p>
+<h1 id="code-vectors-understanding-programs-through-embedded-abstracted-symbolic-traces"><a name="code-vectors-understanding-programs-through-embedded-abstracted-symbolic-traces" class="anchor-navigation-ex-anchor" href="#code-vectors-understanding-programs-through-embedded-abstracted-symbolic-traces"><i class="fa fa-link" aria-hidden="true"></i></a>2. Code Vectors: Understanding Programs Through Embedded Abstracted Symbolic Traces</h1>
+<p>&#x91C7;&#x7528;abstractions of traces obtained from symbolic execution of a program&#x6765;&#x8868;&#x793A;&#x7A0B;&#x5E8F;&#xFF0C;&#x5C06;&#x8FD9;&#x4E9B;traces&#x8F6C;&#x5316;&#x4E3A;&#x5411;&#x91CF;&#xFF0C;&#x8FD9;&#x4E9B;&#x5411;&#x91CF;&#x5373;&#x4EE3;&#x7801;&#x7684;&#x7279;&#x5F81;&#x8868;&#x793A;&#x3002;</p>
+<p>&#x5173;&#x952E;&#x5728;&#x4E8E;&#x5982;&#x4F55;&#x62BD;&#x8C61;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x505A;word embedding</p>
+<ul>
+<li>&#x5173;&#x4E8E;&#x5982;&#x4F55;&#x505A;&#x62BD;&#x8C61;&#xFF1A;
+<img src="https://i.loli.net/2019/09/25/JafQ68xZEvOIjUR.png" alt="">
+<img src="https://i.loli.net/2019/09/25/264JMpCwEgOFVhq.png" alt="">
+<img src="https://i.loli.net/2019/09/25/D3fBOnV92WhAQS4.png" alt=""></li>
+</ul>
+<ul>
+<li>&#x5173;&#x4E8E;&#x5982;&#x4F55;&#x505A;word embedding
+<img src="https://i.loli.net/2019/09/25/kyGD2X45m7TpofO.png" alt=""></li>
 </ul>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; <a href="https://jcharden.github.io" target="_blank">&#x7A0B;&#x6F47;</a> 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-09-25 11:15:26
+2019-09-25 16:42:54
 </span></footer>
                                 
                                 </section>
@@ -404,14 +420,10 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                <a href="Survey_cd.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Clone detection">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="Slicing.html" class="navigation navigation-next " aria-label="Next page: Section1:Slicing">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -420,7 +432,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Chapter1:VulDetection","level":"1.2","depth":1,"next":{"title":"Section1:Slicing","level":"1.2.1","depth":2,"path":"Chapter1/Slicing.md","ref":"Chapter1/Slicing.md","articles":[{"title":"Abstract Program Slicing","level":"1.2.1.1","depth":3,"path":"Chapter1/Slicing_APS.md","ref":"Chapter1/Slicing_APS.md","articles":[]},{"title":"STRUCTURED NEURAL SUMMARIZATION","level":"1.2.1.2","depth":3,"path":"Chapter1/Slicing_SNS.md","ref":"Chapter1/Slicing_SNS.md","articles":[]},{"title":"Code Vectors","level":"1.2.1.3","depth":3,"path":"Chapter1/Slicing_CV.md","ref":"Chapter1/Slicing_CV.md","articles":[]},{"title":"ORBS","level":"1.2.1.4","depth":3,"path":"Chapter1/Slicing_ORBS.md","ref":"Chapter1/Slicing_ORBS.md","articles":[]},{"title":"MOBS","level":"1.2.1.5","depth":3,"path":"Chapter1/Slicing_MOBS.md","ref":"Chapter1/Slicing_MOBS.md","articles":[]},{"title":"TZSlicer","level":"1.2.1.6","depth":3,"path":"Chapter1/Slicing_TZS.md","ref":"Chapter1/Slicing_TZS.md","articles":[]}]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["emphasize","-highlight","tbfed-pagefooter","-lunr","-search","search-plus","prism","-sharing","sharing-plus","github","github-buttons","anchor-navigation-ex","sitemap-general"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy <a href='https://jcharden.github.io' target='_blank'>程潇</a> 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"emphasize":{},"github":{"url":"https://github.com/jcharden"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"sitemap-general":{"prefix":"https://jcharden.github.io/"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"github-buttons":{"buttons":[{"user":"jcharden","repo":"jcharden.github.io","type":"star","size":"small","count":true}]},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":true,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/jcharden"}},"gitbook":"*"},"file":{"path":"Chapter1/README.md","mtime":"2019-09-25T03:15:26.981Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-25T08:44:57.609Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Code representation","level":"1.2.2.4","depth":3,"previous":{"title":"Clone detection","level":"1.2.2.3","depth":3,"path":"Chapter1/Survey_cd.md","ref":"Chapter1/Survey_cd.md","articles":[]},"dir":"ltr"},"config":{"plugins":["emphasize","-highlight","tbfed-pagefooter","-lunr","-search","search-plus","prism","-sharing","sharing-plus","github","github-buttons","anchor-navigation-ex","sitemap-general"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy <a href='https://jcharden.github.io' target='_blank'>程潇</a> 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"emphasize":{},"github":{"url":"https://github.com/jcharden"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"sitemap-general":{"prefix":"https://jcharden.github.io/"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"github-buttons":{"buttons":[{"user":"jcharden","repo":"jcharden.github.io","type":"star","size":"small","count":true}]},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":true,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/jcharden"}},"gitbook":"*"},"file":{"path":"Chapter1/Survey_cr.md","mtime":"2019-09-25T08:42:54.429Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-25T08:44:57.609Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
