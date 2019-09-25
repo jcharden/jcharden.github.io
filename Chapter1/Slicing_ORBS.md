@@ -10,6 +10,6 @@
 ![](https://i.loli.net/2019/09/25/P4LxGo2lAp75TE3.png)
 
 
-## 3 Heuristic
+## 3 Thought
 
 提供了一个slice的思路，通过删除之后而不改变语义的方法。

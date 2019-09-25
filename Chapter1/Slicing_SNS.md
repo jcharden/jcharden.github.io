@@ -13,6 +13,6 @@
 
 文章用来CoreNLP来得到entity，有三种连接关系，next表示顺序关系，in表示从属关系，ref表示引用关系。
 
-## 3 Heuristic
+## 3 Thought
 
 可以把每一个statement再细分成token，然后用AST或者其他方式组织这些token，这样可以最大程度避免丢失由于长文本导致的statement中token信息丢失的问题，但是得到的图会更大，以及如何用AST去表示每条statement是一个待解决问题。

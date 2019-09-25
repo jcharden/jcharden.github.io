@@ -8,6 +8,6 @@
 
 通过vsm和lda算法计算和待删除的lines和已经可以确定删除的lines的相似度，如果很相似则删掉。
 
-## 3 Heuristic
+## 3 Thought
 
 可以通过计算相似度的方法来对slice进行一些预处理
