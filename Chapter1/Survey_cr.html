@@ -37,6 +37,10 @@
                 
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tags/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
@@ -70,8 +74,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="Survey/ANNSCRBOAST.html" />
     
-    <link rel="prev" href="Survey_cd.html" />
+    
+    <link rel="prev" href="Survey/ANNSCRBOAST.html" />
     
 
     <style>
@@ -282,6 +288,38 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.2.1" data-path="Survey/ALSFFDP.html">
+            
+                <a href="Survey/ALSFFDP.html">
+            
+                    
+                    Automatically Learning Semantic Features for Defect Prediction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2.2" data-path="Survey/DeepFL.html">
+            
+                <a href="Survey/DeepFL.html">
+            
+                    
+                    DeepFL: Integrating Multiple Fault Diagnosis Dimensions for Deep Fault Localization
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
         <li class="chapter " data-level="1.2.2.3" data-path="Survey_cd.html">
@@ -294,6 +332,25 @@
                 </a>
             
 
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.3.1" data-path="Survey/ANNSCRBOAST.html">
+            
+                <a href="Survey/ANNSCRBOAST.html">
+            
+                    
+                    A Novel Neural Source Code Representation based on Abstract Syntax Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -308,6 +365,33 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.4.1" data-path="Survey/ANNSCRBOAST.html">
+            
+                <a href="Survey/ANNSCRBOAST.html">
+            
+                    
+                    A Novel Neural Source Code Representation based on Abstract Syntax Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4.2" data-path="Survey/CVUPTEAST.html">
+            
+                <a href="Survey/CVUPTEAST.html">
+            
+                    
+                    Code Vectors: Understanding Programs Through Embedded Abstracted Symbolic Traces
+            
+                </a>
+            
+
+            
         </li>
     
 
@@ -317,6 +401,24 @@
     
 
             </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../tags.html">
+            
+                <a href="../tags.html">
+            
+                    
+                    Tags
+            
+                </a>
+            
+
             
         </li>
     
@@ -365,37 +467,32 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#code-representation"><b>1. </b>Code representation</a></li><ul><li><span class="title-icon "></span><a href="#a-novel-neural-source-code-representation-based-on-abstract-syntax-tree"><b>1.1. </b>A Novel Neural Source Code Representation based on Abstract Syntax Tree</a></li><li><span class="title-icon "></span><a href="#code-vectors-understanding-programs-through-embedded-abstracted-symbolic-traces"><b>1.2. </b>Code Vectors: Understanding Programs Through Embedded Abstracted Symbolic Traces</a></li></ul></ul></div><a href="#code-representation" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="code-representation"><a name="code-representation" class="anchor-navigation-ex-anchor" href="#code-representation"><i class="fa fa-link" aria-hidden="true"></i></a>1. Code representation</h1>
-<h2 id="a-novel-neural-source-code-representation-based-on-abstract-syntax-tree"><a name="a-novel-neural-source-code-representation-based-on-abstract-syntax-tree" class="anchor-navigation-ex-anchor" href="#a-novel-neural-source-code-representation-based-on-abstract-syntax-tree"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. A Novel Neural Source Code Representation based on Abstract Syntax Tree</h2>
-<p><a href="http://xuwang.tech/paper/astnn_icse2019.pdf" target="_blank">pdf</a></p>
-<p>Propose a novel AST-based Neural Network (ASTNN) for source code
-representation.</p>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#code-representation"><b>1. </b>Code representation</a></li></ul></div><a href="#code-representation" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="code-representation"><a name="code-representation" class="anchor-navigation-ex-anchor" href="#code-representation"><i class="fa fa-link" aria-hidden="true"></i></a>1. Code representation</h1>
+<blockquote>
+<p>learn semantic representation of programs. The <code>Code representation</code> mainly includes <code>properties</code>, <code>labels</code>, <code>texts</code>, <code>tokens</code>, <code>ASTs</code> and <code>graphs</code>.</p>
+</blockquote>
 <ul>
-<li>An example of AST Statement nodes (marked in red)</li>
-</ul>
-<p><img src="https://i.loli.net/2019/09/25/mKRJpCDcZu7bG14.png" alt=""></p>
-<ul>
-<li>Overview</li>
-</ul>
-<p><img src="https://i.loli.net/2019/09/25/PFWhzAdqYB9Tbcw.png" alt=""></p>
-<p>First, we parse a source code fragment into an AST, and design a preorder traversal algorithm to split each AST to a sequence of statement trees (ST-trees, which are trees consisting of statement nodes as roots and corresponding AST nodes of the statements), as illustrated in Figure 1. All ST-trees are encoded by the Statement Encoder to vectors, denoted as e1, &#xB7; &#xB7; &#xB7; , et. We then use Bidirectional Gated Recurrent Unit [35] (Bi-GRU), to model the naturalness of the statements. The hidden states of Bi-GRU are sampled into a single vector by pooling, which is the representation of the code fragment.</p>
-<h2 id="code-vectors-understanding-programs-through-embedded-abstracted-symbolic-traces"><a name="code-vectors-understanding-programs-through-embedded-abstracted-symbolic-traces" class="anchor-navigation-ex-anchor" href="#code-vectors-understanding-programs-through-embedded-abstracted-symbolic-traces"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Code Vectors: Understanding Programs Through Embedded Abstracted Symbolic Traces</h2>
-<p><a href="https://arxiv.org/pdf/1803.06686.pdf" target="_blank">pdf</a></p>
-<p>&#x91C7;&#x7528;abstractions of traces obtained from symbolic execution of a program&#x6765;&#x8868;&#x793A;&#x7A0B;&#x5E8F;&#xFF0C;&#x5C06;&#x8FD9;&#x4E9B;traces&#x8F6C;&#x5316;&#x4E3A;&#x5411;&#x91CF;&#xFF0C;&#x8FD9;&#x4E9B;&#x5411;&#x91CF;&#x5373;&#x4EE3;&#x7801;&#x7684;&#x7279;&#x5F81;&#x8868;&#x793A;&#x3002;</p>
-<p>&#x5173;&#x952E;&#x5728;&#x4E8E;&#x5982;&#x4F55;&#x62BD;&#x8C61;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x505A;word embedding</p>
-<ul>
-<li>&#x5173;&#x4E8E;&#x5982;&#x4F55;&#x505A;&#x62BD;&#x8C61;&#xFF1A;
-<img src="https://i.loli.net/2019/09/25/JafQ68xZEvOIjUR.png" alt="">
-<img src="https://i.loli.net/2019/09/25/264JMpCwEgOFVhq.png" alt="">
-<img src="https://i.loli.net/2019/09/25/D3fBOnV92WhAQS4.png" alt=""></li>
-</ul>
-<ul>
-<li>&#x5173;&#x4E8E;&#x5982;&#x4F55;&#x505A;word embedding
-<img src="https://i.loli.net/2019/09/25/kyGD2X45m7TpofO.png" alt=""></li>
+<li><p>properties:
+<img src="https://i.loli.net/2019/09/25/cO8PviS2GapoWhE.png" alt=""></p>
+</li>
+<li><p>labels:
+based on suspiciousness values computed by other traditional/non-traditional techniques.</p>
+</li>
+<li><p>texts:
+such as traces from symbolic execution, from data flow slicing.</p>
+</li>
+<li><p>tokens:
+such as method tokens.</p>
+</li>
+<li><p>ASTs</p>
+</li>
+<li>graphs:
+such as cfg, dfg. </li>
 </ul>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; <a href="https://jcharden.github.io" target="_blank">&#x7A0B;&#x6F47;</a> 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-09-25 22:43:51
+2019-09-26 12:47:42
 </span></footer>
+
                                 
                                 </section>
                             
@@ -422,10 +519,14 @@ representation.</p>
 
             
                 
-                <a href="Survey_cd.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Clone detection">
+                <a href="Survey/ANNSCRBOAST.html" class="navigation navigation-prev " aria-label="Previous page: A Novel Neural Source Code Representation based on Abstract Syntax Tree">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="Survey/ANNSCRBOAST.html" class="navigation navigation-next " aria-label="Next page: A Novel Neural Source Code Representation based on Abstract Syntax Tree">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -434,7 +535,7 @@ representation.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Code representation","level":"1.2.2.4","depth":3,"previous":{"title":"Clone detection","level":"1.2.2.3","depth":3,"path":"Chapter1/Survey_cd.md","ref":"Chapter1/Survey_cd.md","articles":[]},"dir":"ltr"},"config":{"plugins":["emphasize","-highlight","tbfed-pagefooter","-lunr","-search","search-plus","prism","-sharing","sharing-plus","github","github-buttons","anchor-navigation-ex","sitemap-general"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy <a href='https://jcharden.github.io' target='_blank'>程潇</a> 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"emphasize":{},"github":{"url":"https://github.com/jcharden"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"sitemap-general":{"prefix":"https://jcharden.github.io/"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"github-buttons":{"buttons":[{"user":"jcharden","repo":"jcharden.github.io","type":"star","size":"small","count":true}]},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":true,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/jcharden"}},"gitbook":"*"},"file":{"path":"Chapter1/Survey_cr.md","mtime":"2019-09-25T14:43:51.976Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-25T14:45:12.800Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Code representation","level":"1.2.2.4","depth":3,"next":{"title":"A Novel Neural Source Code Representation based on Abstract Syntax Tree","level":"1.2.2.4.1","depth":4,"path":"Chapter1/Survey/ANNSCRBOAST.md","ref":"Chapter1/Survey/ANNSCRBOAST.md","articles":[]},"previous":{"title":"A Novel Neural Source Code Representation based on Abstract Syntax Tree","level":"1.2.2.3.1","depth":4,"path":"Chapter1/Survey/ANNSCRBOAST.md","ref":"Chapter1/Survey/ANNSCRBOAST.md","articles":[]},"dir":"ltr"},"config":{"plugins":["emphasize","-highlight","tbfed-pagefooter","-lunr","-search","search-plus","prism","-sharing","sharing-plus","github","github-buttons","anchor-navigation-ex","sitemap-general","tags"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy <a href='https://jcharden.github.io' target='_blank'>程潇</a> 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"emphasize":{},"github":{"url":"https://github.com/jcharden"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"sitemap-general":{"prefix":"https://jcharden.github.io/"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"github-buttons":{"buttons":[{"user":"jcharden","repo":"jcharden.github.io","type":"star","size":"small","count":true}]},"tags":{"placement":"top"},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":true,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/jcharden"}},"gitbook":"*"},"file":{"path":"Chapter1/Survey_cr.md","mtime":"2019-09-26T04:47:42.584Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-26T04:47:59.870Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
