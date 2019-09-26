@@ -4,6 +4,8 @@ tags: ASTs
 
 [pdf](http://xuwang.tech/paper/astnn_icse2019.pdf)
 
+## Overview
+
 Propose a novel AST-based Neural Network (ASTNN) for source code
 representation.
 
@@ -11,7 +13,7 @@ representation.
 
 ![Figure 1](https://i.loli.net/2019/09/25/mKRJpCDcZu7bG14.png)
 
-- Overview
+## Approach
 
 ![](https://i.loli.net/2019/09/25/PFWhzAdqYB9Tbcw.png)
 

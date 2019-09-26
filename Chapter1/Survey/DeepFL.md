@@ -4,6 +4,8 @@ tags: texts, properties, labels
 
 [pdf](https://dl.acm.org/citation.cfm?id=3330574)
 
+## Approach
+
 Collect various suspiciousness-value-based, fault-proneness-based and
 textual-similarity-based features from the fault localization, defect
 prediction and information retrieval areas. Working at method level.

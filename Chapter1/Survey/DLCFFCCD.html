@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>DeepFL: Integrating Multiple Fault Diagnosis Dimensions for Deep Fault Localization · GitBook</title>
+        <title>Deep Learning Code Fragments for Code Clone Detection · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -74,10 +74,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../Survey_cd.html" />
+    <link rel="next" href="ANNSCRBOAST.html" />
     
     
-    <link rel="prev" href="ALSFFDP.html" />
+    <link rel="prev" href="../Survey_cd.html" />
     
 
     <style>
@@ -304,7 +304,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.2.2.2" data-path="DeepFL.html">
+        <li class="chapter " data-level="1.2.2.2.2" data-path="DeepFL.html">
             
                 <a href="DeepFL.html">
             
@@ -336,7 +336,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.2.3.1" data-path="DLCFFCCD.html">
+        <li class="chapter active" data-level="1.2.2.3.1" data-path="DLCFFCCD.html">
             
                 <a href="DLCFFCCD.html">
             
@@ -465,7 +465,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >DeepFL: Integrating Multiple Fault Diagnosis Dimensions for Deep Fault Localization</a>
+        <a href="../.." >Deep Learning Code Fragments for Code Clone Detection</a>
     </h1>
 </div>
 
@@ -480,28 +480,26 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#deepfl-integrating-multiple-fault-diagnosis-dimensions-for-deep-fault-localization"><b>1. </b>DeepFL: Integrating Multiple Fault Diagnosis Dimensions for Deep Fault Localization</a></li><ul><li><span class="title-icon "></span><a href="#approach"><b>1.1. </b>Approach</a></li></ul></ul></div><a href="#deepfl-integrating-multiple-fault-diagnosis-dimensions-for-deep-fault-localization" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="deepfl-integrating-multiple-fault-diagnosis-dimensions-for-deep-fault-localization"><a name="deepfl-integrating-multiple-fault-diagnosis-dimensions-for-deep-fault-localization" class="anchor-navigation-ex-anchor" href="#deepfl-integrating-multiple-fault-diagnosis-dimensions-for-deep-fault-localization"><i class="fa fa-link" aria-hidden="true"></i></a>1. DeepFL: Integrating Multiple Fault Diagnosis Dimensions for Deep Fault Localization</h1><!-- tags --><div id="tags" class="tags"><p><i class="fa fa-tags" aria-hidden="true"></i> <a href="../../tags.html#texts">texts</a> <a href="../../tags.html#properties">properties</a> <a href="../../tags.html#labels">labels</a></p></div><!-- tagsstop --><p><a href="https://dl.acm.org/citation.cfm?id=3330574" target="_blank">pdf</a></p>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#deep-learning-code-fragments-for-code-clone-detection"><b>1. </b>Deep Learning Code Fragments for Code Clone Detection</a></li><ul><li><span class="title-icon "></span><a href="#approach"><b>1.1. </b>Approach</a></li><li><span class="title-icon "></span><a href="#&#x62D3;&#x5C55;"><b>1.2. </b>&#x62D3;&#x5C55;</a></li></ul></ul></div><a href="#deep-learning-code-fragments-for-code-clone-detection" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="deep-learning-code-fragments-for-code-clone-detection"><a name="deep-learning-code-fragments-for-code-clone-detection" class="anchor-navigation-ex-anchor" href="#deep-learning-code-fragments-for-code-clone-detection"><i class="fa fa-link" aria-hidden="true"></i></a>1. Deep Learning Code Fragments for Code Clone Detection</h1><!-- tags --><div id="tags" class="tags"><p><i class="fa fa-tags" aria-hidden="true"></i> <a href="../../tags.html#asts">ASTs</a></p></div><!-- tagsstop --><p><a href="https://tufanomichele.com/publications/C5.pdf" target="_blank">pdf</a></p>
 <h2 id="approach"><a name="approach" class="anchor-navigation-ex-anchor" href="#approach"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Approach</h2>
-<p>Collect various suspiciousness-value-based, fault-proneness-based and
-textual-similarity-based features from the fault localization, defect
-prediction and information retrieval areas. Working at method level.</p>
+<p>Proposed a learning-based approach for clone detection.</p>
+<p>Generally, there are four clone types.</p>
 <ul>
-<li><p>Spectrum-based Suspiciousness</p>
-<p>learn faulty locations based on suspiciousness values computed by 25 traditional spectrum-based fault localization techniques.</p>
-</li>
-<li><p>Mutation-based Suspiciousness</p>
-</li>
-<li><p>Complexity-based Fault Proneness</p>
-<p>code complexity metrics have been widely used to estimate the fault-proneness of code elements in the field of defect prediction. we collect all the 21 widely-used code complexity metrics (shown in Table 1) for the method level (since DeepFL works at the method level). In addition, we also collect the statistics for each type of Java ASM [67] bytecode instructions shown Table 1. In total, we have 37 complexity-based features.
-<img src="https://i.loli.net/2019/09/25/cO8PviS2GapoWhE.png" alt=""></p>
-</li>
-<li><p>Textual Similarity Information</p>
-<p>We investigate the textual similarity between source code methods and failed test information. Similar with the structured information retrieval work, we also collect different fields for both queries and documents. Query fields come from failed tests, including the name of failed tests, the source code of failed tests and the complete failure message (including exception type, message, and stacktrace). Document fields come from source code methods, including: the full qualified name of the method, accessed classes, method invocations, used variables, and comments. Each field of query can be searched on each field of document, yielding 15 combinations. For each combination, we calculate the similarity score between the query field and the document field by using the popular TF.IDF model. Then, we treat the similarity scores of the 15 combinations as 15 features for our DeepFL.</p>
-<p><img src="https://i.loli.net/2019/09/25/hfq7KwJeIHSY85c.png" alt=""></p>
-</li>
+<li>Type I: Identical fragments except for variations in comments and layout.</li>
+<li>Type II: Identical fragments except for variations in identifier names and literal values in addition to Type I differences.</li>
+<li>Type III: Syntactically similar fragments that differ at the statement level. The fragments have statements added, modified, or removed with respect to each other, in addition to Type II differences - Type IV: Syntactically dissimilar fragments that implement the same functionality.</li>
 </ul>
+<p>Type I, II, and III clones indicate textual similarity whereas Type IV clones indicate functional similarity.</p>
+<p><img src="https://i.loli.net/2019/09/26/IbQPi71VkKFesGx.png" alt=""></p>
+<ul>
+<li>The first part we use a particular type of language model, an RtNN, to
+map each term in a fragment to an embedding.</li>
+<li>The second part we use the language&#x2019;s grammar and a recursive learning procedure, implemented as an RvNN, to encode arbitrarily long sequences of embeddings to characterize fragments.</li>
+</ul>
+<h2 id="&#x62D3;&#x5C55;"><a name="&#x62D3;&#x5C55;" class="anchor-navigation-ex-anchor" href="#&#x62D3;&#x5C55;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x62D3;&#x5C55;</h2>
+<p>Recently, Language models&apos; effectiveness has suffused SE tasks such as code suggestion , deriving readable string test inputs to reduce human oracle cost , predicting comments to improve search over code bases and code categorization , improving error reporting , generating feasible test cases to improve coverage , improving stylistic consistency to aid readability and maintainability, code migration, synthesizing API completions , code review , fault localization , and suggesting method and class names.</p>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; <a href="https://jcharden.github.io" target="_blank">&#x7A0B;&#x6F47;</a> 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-09-26 13:15:41
+2019-09-26 13:16:00
 </span></footer>
 
                                 
@@ -530,12 +528,12 @@ prediction and information retrieval areas. Working at method level.</p>
 
             
                 
-                <a href="ALSFFDP.html" class="navigation navigation-prev " aria-label="Previous page: Automatically Learning Semantic Features for Defect Prediction">
+                <a href="../Survey_cd.html" class="navigation navigation-prev " aria-label="Previous page: Clone detection">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../Survey_cd.html" class="navigation navigation-next " aria-label="Next page: Clone detection">
+                <a href="ANNSCRBOAST.html" class="navigation navigation-next " aria-label="Next page: A Novel Neural Source Code Representation based on Abstract Syntax Tree">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -546,7 +544,7 @@ prediction and information retrieval areas. Working at method level.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"DeepFL: Integrating Multiple Fault Diagnosis Dimensions for Deep Fault Localization","level":"1.2.2.2.2","depth":4,"next":{"title":"Clone detection","level":"1.2.2.3","depth":3,"path":"Chapter1/Survey_cd.md","ref":"Chapter1/Survey_cd.md","articles":[{"title":"Deep Learning Code Fragments for Code Clone Detection","level":"1.2.2.3.1","depth":4,"path":"Chapter1/Survey/DLCFFCCD.md","ref":"Chapter1/Survey/DLCFFCCD.md","articles":[]},{"title":"A Novel Neural Source Code Representation based on Abstract Syntax Tree","level":"1.2.2.3.2","depth":4,"path":"Chapter1/Survey/ANNSCRBOAST.md","ref":"Chapter1/Survey/ANNSCRBOAST.md","articles":[]}]},"previous":{"title":"Automatically Learning Semantic Features for Defect Prediction","level":"1.2.2.2.1","depth":4,"path":"Chapter1/Survey/ALSFFDP.md","ref":"Chapter1/Survey/ALSFFDP.md","articles":[]},"dir":"ltr"},"config":{"plugins":["emphasize","-highlight","tbfed-pagefooter","-lunr","-search","search-plus","prism","-sharing","sharing-plus","github","github-buttons","anchor-navigation-ex","sitemap-general","tags"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy <a href='https://jcharden.github.io' target='_blank'>程潇</a> 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"emphasize":{},"github":{"url":"https://github.com/jcharden"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"sitemap-general":{"prefix":"https://jcharden.github.io/"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"github-buttons":{"buttons":[{"user":"jcharden","repo":"jcharden.github.io","type":"star","size":"small","count":true}]},"tags":{"placement":"top"},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":true,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/jcharden"}},"gitbook":"*"},"file":{"path":"Chapter1/Survey/DeepFL.md","mtime":"2019-09-26T05:15:41.948Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-26T05:16:15.815Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Deep Learning Code Fragments for Code Clone Detection","level":"1.2.2.3.1","depth":4,"next":{"title":"A Novel Neural Source Code Representation based on Abstract Syntax Tree","level":"1.2.2.3.2","depth":4,"path":"Chapter1/Survey/ANNSCRBOAST.md","ref":"Chapter1/Survey/ANNSCRBOAST.md","articles":[]},"previous":{"title":"Clone detection","level":"1.2.2.3","depth":3,"path":"Chapter1/Survey_cd.md","ref":"Chapter1/Survey_cd.md","articles":[{"title":"Deep Learning Code Fragments for Code Clone Detection","level":"1.2.2.3.1","depth":4,"path":"Chapter1/Survey/DLCFFCCD.md","ref":"Chapter1/Survey/DLCFFCCD.md","articles":[]},{"title":"A Novel Neural Source Code Representation based on Abstract Syntax Tree","level":"1.2.2.3.2","depth":4,"path":"Chapter1/Survey/ANNSCRBOAST.md","ref":"Chapter1/Survey/ANNSCRBOAST.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["emphasize","-highlight","tbfed-pagefooter","-lunr","-search","search-plus","prism","-sharing","sharing-plus","github","github-buttons","anchor-navigation-ex","sitemap-general","tags"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy <a href='https://jcharden.github.io' target='_blank'>程潇</a> 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"emphasize":{},"github":{"url":"https://github.com/jcharden"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"sitemap-general":{"prefix":"https://jcharden.github.io/"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"github-buttons":{"buttons":[{"user":"jcharden","repo":"jcharden.github.io","type":"star","size":"small","count":true}]},"tags":{"placement":"top"},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":true,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/jcharden"}},"gitbook":"*"},"file":{"path":"Chapter1/Survey/DLCFFCCD.md","mtime":"2019-09-26T05:16:00.482Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-26T05:16:15.815Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

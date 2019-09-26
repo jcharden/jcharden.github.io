@@ -4,6 +4,8 @@ tags: texts
 
 [pdf](https://arxiv.org/pdf/1803.06686.pdf)
 
+## Approach
+
 采用abstractions of traces obtained from symbolic execution of a program来表示程序，将这些traces转化为向量，这些向量即代码的特征表示。
 
 关键在于如何抽象以及如何做word embedding
