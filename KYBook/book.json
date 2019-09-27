@@ -1,0 +1,131 @@
+{
+
+
+
+    "plugins": [
+      "emphasize",
+      "-highlight",
+      "tbfed-pagefooter",
+      "-lunr",
+      "-search",
+      "search-plus",
+      "prism",
+      "-sharing",
+      "sharing-plus",
+      "github",
+      "github-buttons",
+      "anchor-navigation-ex",
+      "sitemap-general",
+      "tags"
+      ],
+
+    "pluginsConfig": {
+      "tags": {
+        "placement": "top"
+      },
+        "tbfed-pagefooter": {
+        "copyright":"Copyright &copy <a href='https://jcharden.github.io' target='_blank'>程潇</a> 2019",
+        "modify_label": "该文件修订时间：",
+        "modify_format": "YYYY-MM-DD HH:mm:ss"
+       },
+       "github": {
+        "url": "https://github.com/jcharden"
+       },
+       "sitemap-general": {
+        "prefix": "https://jcharden.github.io/"
+      },
+       "github-buttons": {
+        "buttons": [
+          {
+            "user": "jcharden",
+            "repo": "jcharden.github.io",
+            "type": "star",
+            "size": "small",
+            "count": true
+          }
+        ]
+      },
+      "anchor-navigation-ex": {
+        "showLevel": true,
+        "associatedWithSummary": false,
+        "printLog": false,
+        "multipleH1": true,
+        "mode": "float",
+        "showGoTop": true,
+        "float": {
+          "floatIcon": "fa fa-navicon",
+          "showLevelIcon": false,
+          "level1Icon": "fa fa-hand-o-right",
+          "level2Icon": "fa fa-hand-o-right",
+          "level3Icon": "fa fa-hand-o-right"
+        },
+        "pageTop": {
+          "showLevelIcon": false,
+          "level1Icon": "fa fa-hand-o-right",
+          "level2Icon": "fa fa-hand-o-right",
+          "level3Icon": "fa fa-hand-o-right"
+        }
+      },
+       "sharing": {
+        "douban": false,
+        "facebook": false,
+        "google": true,
+        "hatenaBookmark": false,
+        "instapaper": false,
+        "line": true,
+        "linkedin": true,
+        "messenger": false,
+        "pocket": false,
+        "qq": false,
+        "qzone": true,
+        "stumbleupon": false,
+        "twitter": false,
+        "viber": false,
+        "vk": false,
+        "weibo": true,
+        "whatsapp": false,
+        "all": [
+          "facebook",
+          "google",
+          "twitter",
+          "weibo",
+          "instapaper",
+          "linkedin",
+          "pocket",
+          "stumbleupon"
+        ]
+      },
+       "prism": {
+        "css": [
+          "prismjs/themes/prism-tomorrow.css"
+        ],
+        "lang": {
+          "flow": "typescript"
+        },
+        "ignore": [
+          "mermaid",
+          "eval-js"
+        ]
+      }
+     },
+
+     "pdf": {
+      "pageNumbers": true,
+      "fontFamily": "Arial",
+      "fontSize": 12,
+      "paperSize": "a4",
+      "margin": {
+        "right": 62,
+        "left": 62,
+        "top": 56,
+        "bottom": 56
+      }
+    },
+
+    "language": "zh-hans",
+    "links": {
+      "sidebar": {
+        "GitHub": "https://github.com/jcharden"
+      }
+    }
+}
