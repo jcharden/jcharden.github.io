@@ -1,4 +1,0 @@
-# Introduction
-
-Have fun exploring~
-
