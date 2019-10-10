@@ -14,6 +14,8 @@
         * [Defect/Fault prediction](Chapter1/Survey_sdp.md)
             * [Automatically Learning Semantic Features for Defect Prediction](Chapter1/Survey/ALSFFDP.md)
             * [DeepFL: Integrating Multiple Fault Diagnosis Dimensions for Deep Fault Localization](Chapter1/Survey/DeepFL.md)
+            * [Learning to rank for information retrieval](Chapter1/Survey/LTRFIR.md)
+            * [Learning to Combine Multiple Ranking Metrics for Fault Localization](Chapter1/Survey/LTCMRMFFL.md)
         * [Clone detection](Chapter1/Survey_cd.md)
             * [Deep Learning Code Fragments for Code Clone Detection](Chapter1/Survey/DLCFFCCD.md)
             * [A Novel Neural Source Code Representation based on Abstract Syntax Tree](Chapter1/Survey/ANNSCRBOAST.md)
