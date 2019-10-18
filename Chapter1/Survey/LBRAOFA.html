@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Automatically Learning Semantic Features for Defect Prediction · GitBook</title>
+        <title>Learning-based Recursive Aggregation of Abstract Syntax Trees for Code Clone Detection · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -74,10 +74,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="DeepFL.html" />
+    <link rel="next" href="DECKARD.html" />
     
     
-    <link rel="prev" href="../Survey_sdp.html" />
+    <link rel="prev" href="ANNSCRBOAST.html" />
     
 
     <style>
@@ -291,7 +291,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.2.2.2.1" data-path="ALSFFDP.html">
+        <li class="chapter " data-level="1.2.2.2.1" data-path="ALSFFDP.html">
             
                 <a href="ALSFFDP.html">
             
@@ -388,7 +388,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2.3.3" data-path="LBRAOFA.html">
+        <li class="chapter active" data-level="1.2.2.3.3" data-path="LBRAOFA.html">
             
                 <a href="LBRAOFA.html">
             
@@ -530,7 +530,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Automatically Learning Semantic Features for Defect Prediction</a>
+        <a href="../.." >Learning-based Recursive Aggregation of Abstract Syntax Trees for Code Clone Detection</a>
     </h1>
 </div>
 
@@ -545,18 +545,15 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#automatically-learning-semantic-features-for-defect-prediction"><b>1. </b>Automatically Learning Semantic Features for Defect Prediction</a></li><ul><li><span class="title-icon "></span><a href="#motivating-example"><b>1.1. </b>Motivating example</a></li><li><span class="title-icon "></span><a href="#prediction-process"><b>1.2. </b>Prediction process</a></li></ul></ul></div><a href="#automatically-learning-semantic-features-for-defect-prediction" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="automatically-learning-semantic-features-for-defect-prediction"><a name="automatically-learning-semantic-features-for-defect-prediction" class="anchor-navigation-ex-anchor" href="#automatically-learning-semantic-features-for-defect-prediction"><i class="fa fa-link" aria-hidden="true"></i></a>1. Automatically Learning Semantic Features for Defect Prediction</h1><!-- tags --><div id="tags" class="tags"><p><i class="fa fa-tags" aria-hidden="true"></i> <a href="../../tags.html#asts">ASTs</a></p></div><!-- tagsstop --><p><a href="https://ece.uwaterloo.ca/~lintan/publications/deeplearn-icse16.pdf" target="_blank">pdf</a></p>
-<p>Leverage Deep Belief Network (<strong>DBN</strong>) to automatically learn semantic features from token vectors extracted from programs&#x2019; Abstract Syntax Trees (<strong>ASTs</strong>).</p>
-<h2 id="motivating-example"><a name="motivating-example" class="anchor-navigation-ex-anchor" href="#motivating-example"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Motivating example</h2>
-<p><img src="https://i.loli.net/2019/09/25/kur9RjVgcZP2Js3.png" alt=""></p>
-<h2 id="prediction-process"><a name="prediction-process" class="anchor-navigation-ex-anchor" href="#prediction-process"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Prediction process</h2>
-<p>1) nodes of method invocations and class instance creations
-2) declaration nodes, i.e., method declarations, type declarations, and enum declarations, and
-3) control-flow nodes such as while statements, catch clauses, if statements, throw statements.</p>
-<p><img src="https://i.loli.net/2019/09/25/duC6mnSi8aZcXjx.png" alt=""></p>
-<p><img src="https://i.loli.net/2019/09/25/Odjflb4Su965QCn.png" alt=""></p>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#learning-based-recursive-aggregation-of-abstract-syntax-trees-for-code-clone-detection"><b>1. </b>Learning-based Recursive Aggregation of Abstract Syntax Trees for Code Clone Detection</a></li><ul><li><span class="title-icon "></span><a href="#data-preprocessing"><b>1.1. </b>Data preprocessing</a></li><li><span class="title-icon "></span><a href="#embedding"><b>1.2. </b>Embedding</a></li></ul></ul></div><a href="#learning-based-recursive-aggregation-of-abstract-syntax-trees-for-code-clone-detection" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="learning-based-recursive-aggregation-of-abstract-syntax-trees-for-code-clone-detection"><a name="learning-based-recursive-aggregation-of-abstract-syntax-trees-for-code-clone-detection" class="anchor-navigation-ex-anchor" href="#learning-based-recursive-aggregation-of-abstract-syntax-trees-for-code-clone-detection"><i class="fa fa-link" aria-hidden="true"></i></a>1. Learning-based Recursive Aggregation of Abstract Syntax Trees for Code Clone Detection</h1><!-- tags --><div id="tags" class="tags"><p><i class="fa fa-tags" aria-hidden="true"></i> <a href="../../tags.html#asts">ASTs</a></p></div><!-- tagsstop --><p><a href="https://pvs.ifi.uni-heidelberg.de/fileadmin/papers/2019/Buech-Andrzejak-SANER2019.pdf" target="_blank">pdf</a></p>
+<p>Implement an AST-based Recursive Neural Network.</p>
+<h2 id="data-preprocessing"><a name="data-preprocessing" class="anchor-navigation-ex-anchor" href="#data-preprocessing"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Data preprocessing</h2>
+<p><img src="https://i.loli.net/2019/10/18/Mn3Zbq8NLUPDCFg.png" alt=""></p>
+<h2 id="embedding"><a name="embedding" class="anchor-navigation-ex-anchor" href="#embedding"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Embedding</h2>
+<p>Use the word2vec skipgram model and make three modifications. First, we fix the context size and view contexts as ordered tuples, rather than bags of tokens. Second, in the case of node types, we define the context not by a window, but by the local neighborhood of the node (parent, children). That means that there is an ordered context of three elements. In the case of node contents, we use an ordered context of four elements (two preceding and two succeeding tokens). Finally, the total possible number of positive and negative samples is relatively small. Therefore, we consider its entirety, instead of statistical sampling and smoothing w.r.t. the relative frequencies.</p>
+<p>Use <a href="https://github.com/stanfordnlp/treelstm" target="_blank">Tree-Structured Long Short-Term Memory Networks</a> </p>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; <a href="https://jcharden.github.io" target="_blank">&#x7A0B;&#x6F47;</a> 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-09-27 11:04:02
+2019-10-18 16:22:50
 </span></footer>
 
                                 
@@ -585,12 +582,12 @@
 
             
                 
-                <a href="../Survey_sdp.html" class="navigation navigation-prev " aria-label="Previous page: Defect/Fault prediction">
+                <a href="ANNSCRBOAST.html" class="navigation navigation-prev " aria-label="Previous page: A Novel Neural Source Code Representation based on Abstract Syntax Tree">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="DeepFL.html" class="navigation navigation-next " aria-label="Next page: DeepFL: Integrating Multiple Fault Diagnosis Dimensions for Deep Fault Localization">
+                <a href="DECKARD.html" class="navigation navigation-next " aria-label="Next page: DECKARD: Scalable and Accurate Tree-based Detection of Code Clones">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -601,7 +598,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Automatically Learning Semantic Features for Defect Prediction","level":"1.2.2.2.1","depth":4,"next":{"title":"DeepFL: Integrating Multiple Fault Diagnosis Dimensions for Deep Fault Localization","level":"1.2.2.2.2","depth":4,"path":"Chapter1/Survey/DeepFL.md","ref":"Chapter1/Survey/DeepFL.md","articles":[]},"previous":{"title":"Defect/Fault prediction","level":"1.2.2.2","depth":3,"path":"Chapter1/Survey_sdp.md","ref":"Chapter1/Survey_sdp.md","articles":[{"title":"Automatically Learning Semantic Features for Defect Prediction","level":"1.2.2.2.1","depth":4,"path":"Chapter1/Survey/ALSFFDP.md","ref":"Chapter1/Survey/ALSFFDP.md","articles":[]},{"title":"DeepFL: Integrating Multiple Fault Diagnosis Dimensions for Deep Fault Localization","level":"1.2.2.2.2","depth":4,"path":"Chapter1/Survey/DeepFL.md","ref":"Chapter1/Survey/DeepFL.md","articles":[]},{"title":"Learning to rank for information retrieval","level":"1.2.2.2.3","depth":4,"path":"Chapter1/Survey/LTRFIR.md","ref":"Chapter1/Survey/LTRFIR.md","articles":[]},{"title":"Learning to Combine Multiple Ranking Metrics for Fault Localization","level":"1.2.2.2.4","depth":4,"path":"Chapter1/Survey/LTCMRMFFL.md","ref":"Chapter1/Survey/LTCMRMFFL.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["emphasize","-highlight","tbfed-pagefooter","-lunr","-search","search-plus","prism","-sharing","sharing-plus","github","github-buttons","anchor-navigation-ex","sitemap-general","tags"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy <a href='https://jcharden.github.io' target='_blank'>程潇</a> 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"emphasize":{},"github":{"url":"https://github.com/jcharden"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"sitemap-general":{"prefix":"https://jcharden.github.io/"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"github-buttons":{"buttons":[{"user":"jcharden","repo":"jcharden.github.io","type":"star","size":"small","count":true}]},"tags":{"placement":"top"},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":true,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/jcharden"}},"gitbook":"*"},"file":{"path":"Chapter1/Survey/ALSFFDP.md","mtime":"2019-09-27T03:04:02.153Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-18T08:35:38.290Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Learning-based Recursive Aggregation of Abstract Syntax Trees for Code Clone Detection","level":"1.2.2.3.3","depth":4,"next":{"title":"DECKARD: Scalable and Accurate Tree-based Detection of Code Clones","level":"1.2.2.3.4","depth":4,"path":"Chapter1/Survey/DECKARD.md","ref":"Chapter1/Survey/DECKARD.md","articles":[]},"previous":{"title":"A Novel Neural Source Code Representation based on Abstract Syntax Tree","level":"1.2.2.3.2","depth":4,"path":"Chapter1/Survey/ANNSCRBOAST.md","ref":"Chapter1/Survey/ANNSCRBOAST.md","articles":[]},"dir":"ltr"},"config":{"plugins":["emphasize","-highlight","tbfed-pagefooter","-lunr","-search","search-plus","prism","-sharing","sharing-plus","github","github-buttons","anchor-navigation-ex","sitemap-general","tags"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy <a href='https://jcharden.github.io' target='_blank'>程潇</a> 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"flow":"typescript"},"ignore":["mermaid","eval-js"]},"emphasize":{},"github":{"url":"https://github.com/jcharden"},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"sitemap-general":{"prefix":"https://jcharden.github.io/"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"github-buttons":{"buttons":[{"user":"jcharden","repo":"jcharden.github.io","type":"star","size":"small","count":true}]},"tags":{"placement":"top"},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":true,"vk":false,"pocket":false,"google":true,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","links":{"sidebar":{"GitHub":"https://github.com/jcharden"}},"gitbook":"*"},"file":{"path":"Chapter1/Survey/LBRAOFA.md","mtime":"2019-10-18T08:22:50.272Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-18T08:35:38.290Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
