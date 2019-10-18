@@ -19,6 +19,7 @@
         * [Clone detection](Chapter1/Survey_cd.md)
             * [Deep Learning Code Fragments for Code Clone Detection](Chapter1/Survey/DLCFFCCD.md)
             * [A Novel Neural Source Code Representation based on Abstract Syntax Tree](Chapter1/Survey/ANNSCRBOAST.md)
+            * [Learning-based Recursive Aggregation of Abstract Syntax Trees for Code Clone Detection](Chapter1/Survey/LBRAOFA.md)
             * [DECKARD: Scalable and Accurate Tree-based Detection of Code Clones](Chapter1/Survey/DECKARD.md)
             * [SourcererCC: Scaling Code Clone Detection to Big Code](Chapter1/Survey/SourcererCC.md)
         * [Code representation](Chapter1/Survey_cr.md)
