@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+<canvas id="my" width="1000" height="700" style="border: 1px solid #f00;"></canvas>
+
+</body>
+<script type="text/javascript">
+    var c = document.getElementById("my");
+    var ctx = c.getContext("2d");
+
+    c.onmousedown = function(e){
+        var e = e ||event;
+        var ox = e.clientX -c.offsetLeft;
+        var oy = e.clientY - c.offsetTop;
+        ctx.moveTo(ox,oy);
+
+        document.onmousemove = function(e){
+            var ox2 = e.clientX -c.offsetLeft;
+            var oy2 = e.clientY - c.offsetTop;
+            ctx.lineTo(ox2,oy2);
+            ctx.stroke();
+        }
+
+        document.onmouseup  = function(e){
+            document.onmousemove =null;
+            document.onmouseup = null;
+        }
+    }
+
+</script>
+</html>
